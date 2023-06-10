@@ -1,3 +1,3 @@
 ## ( Portfolio ) https://www.nurullokarimov.uz
 
-ya_medinee
+insta: ya_medinee
