@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import "./navbar.scss";
+import "./main.scss";
 
-class Navbar extends Component {
+class Main extends Component {
     render() { 
         return (
-            <div className='navbar'>
+            <div className='main'>
 
             </div>
         );
     }
 }
  
-export default Navbar;
+export default Main;
