@@ -7,6 +7,7 @@ class Main extends Component {
     return (
       <div className="main">
         <Header />
+        <h3 className="main-title">Dashboard</h3>
       </div>
     );
   }
