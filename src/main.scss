@@ -5,6 +5,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	text-decoration: none;
+	user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -22,6 +24,7 @@
 #root {
 	max-width: 1440px;
 	width: 100%;
+	height: 100vh;
 	margin: auto;
 	background-color: #fff;
 	font-family: 'Poppins', sans-serif;

@@ -1,10 +1,11 @@
 .navbar {
-   width: 290px;
+   width: 250px;
    height: 100%;
    overflow: auto;
    background: #171b2d;
    border-right: 1.5px solid #262835;
    padding: 30px 0;
+   user-select: none;
 
    .logo-part {
       height: 100px;
@@ -33,7 +34,6 @@
          display: flex;
          align-items: center;
          gap: 20px;
-         text-decoration: none;
          color: #ADB3CC;
          cursor: pointer;
          transition: all 0.2s;
@@ -85,11 +85,11 @@
    width: 5px;
    border-radius: 10px;
    background-color: inherit;
+
 }
 
 .navbar::-webkit-scrollbar-thumb {
    border-radius: 10px;
-   // background-color: #42BBFF;
    background-color: #ADB3CC;
    border: 0;
 }
