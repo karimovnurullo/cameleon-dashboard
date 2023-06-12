@@ -5,6 +5,8 @@ class Menu extends Component {
     super(props);
     this.img = props.img;
     this.title = props.title;
+    this.new = props.new;
+    this.notif = props.notif;
   }
   render() {
     return (

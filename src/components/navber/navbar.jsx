@@ -34,10 +34,14 @@ class Navbar extends Component {
         </div>
         <div className="menus-part">
           <div className="menus-part-title">Main Menu</div>
-          {menus.map(({ img, title }, idx) => (
+          {/* {menus.map(({ img, title }, idx) => (
             <Menu img={img} title={title} key={idx} />
-          ))}
-          ;
+          ))}; */}
+          <a href="#" className="menu">
+            <img src={icon1} alt="" />
+            <div className="name">Notifications</div>
+            <div className="new">3 new</div>
+          </a>
         </div>
       </div>
     );
