@@ -17,16 +17,24 @@ import "./navbar.scss";
 
 class Navbar extends Component {
   state = {
-    menus: [
+    main: [
       { img: icon1, title: "Dashboard" },
-      { img: icon2, title: "Messages" },
+      { img: icon2, title: "Messages", mes: "3 new" },
       { img: icon3, title: "Reports" },
       { img: icon4, title: "Notifications" },
-      { img: icon5, title: "Invoices" },
+      { img: icon5, title: "Invoices", notif: "10+" },
+    ],
+    works: [
+      { img: icon6, title: "Bookmarks" },
+      { img: icon7, title: "Conferences" },
+    ],
+    options: [
+      { img: icon8, title: "Settings" },
+      { img: icon9, title: "About" },
     ],
   };
   render() {
-    const { menus } = this.state;
+    const { main, works, options } = this.state;
     return (
       <div className="navbar">
         <div className="logo-part">
@@ -34,13 +42,21 @@ class Navbar extends Component {
         </div>
         <div className="menus-part">
           <div className="menus-part-title">Main Menu</div>
-          {/* {menus.map(({ img, title }, idx) => (
-            <Menu img={img} title={title} key={idx} />
-          ))}; */}
+          {main.map(({ img, title, mes, notif }, idx) => (
+            <Menu img={img} title={title} mes={mes} notif={notif} key={idx} />
+          ))}
+          ;<div className="menus-part-title">WORKS</div>
+          {works.map(({ img, title, mes, notif }, idx) => (
+            <Menu img={img} title={title} mes={mes} notif={notif} key={idx} />
+          ))}
+          ;<div className="menus-part-title">OPTIONS</div>
+          {options.map(({ img, title, mes, notif }, idx) => (
+            <Menu img={img} title={title} mes={mes} notif={notif} key={idx} />
+          ))}
+          ;
           <a href="#" className="menu">
-            <img src={icon1} alt="" />
-            <div className="name">Notifications</div>
-            <div className="new">3 new</div>
+            <img src={icon10} alt="" />
+            <div className="name">Light Mode</div>
           </a>
         </div>
       </div>

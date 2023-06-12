@@ -4,6 +4,7 @@
    overflow: auto;
    background: #171b2d;
    border-right: 1.5px solid #262835;
+   padding: 30px 0;
 
    .logo-part {
       height: 100px;
@@ -44,11 +45,11 @@
 
          &:hover {
             color: #42BBFF;
-
          }
 
-         .new {
-            padding: 2px 6px;
+         .new,
+         .notif {
+            padding: 3px 6px;
             font-size: 13px;
             line-height: 16px;
             letter-spacing: -0.04em;
@@ -57,9 +58,38 @@
             border-radius: 26px;
             display: flex;
             align-items: center;
+            justify-content: center;
             text-align: center;
             margin-left: auto;
          }
+
+         .notif {
+            background: #BF3931;
+            color: #fff;
+         }
+
+         .none {
+            display: none;
+         }
       }
+
+      .menu:nth-child(2) {
+         color: #42BBFF;
+      }
+
    }
+
+}
+
+.navbar::-webkit-scrollbar {
+   width: 5px;
+   border-radius: 10px;
+   background-color: inherit;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   // background-color: #42BBFF;
+   background-color: #ADB3CC;
+   border: 0;
 }
