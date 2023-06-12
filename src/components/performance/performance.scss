@@ -1,0 +1,72 @@
+.performance {
+   &-title {
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: #ADB3CC;
+   }
+
+   &-subtitle {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.02em;
+      color: #585F80;
+   }
+
+   &-cards {
+      display: flex;
+      gap: 20px;
+      height: fit-content;
+      margin-top: 30px;
+
+      .card {
+         width: 318px;
+         height: 197px;
+         background: #1A1E30;
+         border-radius: 12px;
+         padding: 24px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         &.active {
+            background: #0329E8;
+         }
+
+         .top-part,
+         .bottom-part {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h3 {
+               font-weight: 400;
+               font-size: 20px;
+               letter-spacing: -0.02em;
+               color: #DDEFFA;
+            }
+         }
+
+         .main-number {
+            font-weight: 600;
+            font-size: 58px;
+            letter-spacing: -0.02em;
+            color: #DDEFFA;
+         }
+
+         .bottom-part {
+            h3 {
+               font-weight: 400;
+               font-size: 16px;
+               letter-spacing: -0.02em;
+               color: #EFFFF7;
+            }
+         }
+
+         &:first-child {
+            background: #0329E8;
+         }
+      }
+
+   }
+}

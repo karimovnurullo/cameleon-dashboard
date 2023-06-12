@@ -11,4 +11,11 @@
     color: #ADB3CC;
     margin-top: 20px;
   }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+  }
 }
