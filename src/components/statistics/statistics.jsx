@@ -9,14 +9,14 @@ import networkRed from "../../photos/performance/network-red.svg";
 import chart from "../../photos/performance/chart.svg";
 import calendar from "../../photos/performance/calendar.svg";
 
-import "./performance.scss";
+import "../performance/performance.scss";
 
-class Performance extends Component {
+class Statistics extends Component {
   state = {
     cards: [
       { name: "Visitors", nameImg: users, num: "92,680", miniNum: "+3,840 (26,80%)", img: network },
-      { name: "Page views", nameImg: show, num: "580.5K", miniNum: "+210K (16,20%)", img: networkGreen },
-      { name: "Bounce rates", nameImg: chart, num: "15.43%", miniNum: "-0.74 (0.74%)", img: networkRed },
+      { name: "New users", nameImg: show, num: "17,805", miniNum: "+1,500 (4,17%)", img: networkGreen },
+      { name: "Online users", nameImg: chart, num: "1,846", miniNum: "+530 (8,38%)", img: networkRed },
     ],
   };
   render() {
@@ -44,4 +44,4 @@ class Performance extends Component {
   }
 }
 
-export default Performance;
+export default Statistics;

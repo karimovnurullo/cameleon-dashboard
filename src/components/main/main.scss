@@ -3,12 +3,13 @@
   height: 100%;
   background: #171b2d;
   padding: 0 28px 20px;
+  overflow: auto;
 
   &-title {
     font-weight: 600;
     font-size: 32px;
     letter-spacing: -0.02em;
-    color: #ADB3CC;
+    color: #adb3cc;
     margin-top: 20px;
   }
 

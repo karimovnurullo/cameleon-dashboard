@@ -1,13 +1,6 @@
 import react, { Component } from "react";
 
 class Menu extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.img = props.img;
-  //   this.title = props.title;
-  //   this.new = props.new;
-  //   this.notif = props.notif;
-  // }
   render() {
     const { img, title, mes, notif } = this.props;
     const mesClassName = `${mes ? "new " : "none"}`;

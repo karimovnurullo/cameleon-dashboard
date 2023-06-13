@@ -54,10 +54,7 @@ class Navbar extends Component {
             <Menu img={img} title={title} mes={mes} notif={notif} key={idx} />
           ))}
           ;
-          <a href="#" className="menu">
-            <img src={icon10} alt="" />
-            <div className="name">Light Mode</div>
-          </a>
+          <Menu img={icon10} title={"Light Mode"} />
         </div>
       </div>
     );
