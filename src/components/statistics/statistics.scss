@@ -77,7 +77,7 @@
             font-weight: 600;
             font-size: 58px;
             letter-spacing: -0.02em;
-            color: #17B1EA;
+            color: #ADB3CC;
 
          }
 
@@ -90,7 +90,8 @@
             }
          }
 
-         &:nth-child(2) {
+         &:nth-child(2),
+         &:nth-child(3) {
             .bottom-part {
                h3 {
                   color: #00DE73;
@@ -98,13 +99,6 @@
             }
          }
 
-         &:nth-child(3) {
-            .bottom-part {
-               h3 {
-                  color: #F21010;
-               }
-            }
-         }
       }
 
       .view-all {

@@ -8,15 +8,17 @@ import networkGreen from "../../photos/performance/network-green.svg";
 import networkRed from "../../photos/performance/network-red.svg";
 import chart from "../../photos/performance/chart.svg";
 import calendar from "../../photos/performance/calendar.svg";
+import card from "../../photos/statistics/card.svg";
+import addUser from "../../photos/statistics/add-user.svg";
+import activity from "../../photos/statistics/Activity.svg";
 
-import "../performance/performance.scss";
+import "./statistics.scss";
 
 class Statistics extends Component {
   state = {
     cards: [
-      { name: "Visitors", nameImg: users, num: "92,680", miniNum: "+3,840 (26,80%)", img: network },
-      { name: "New users", nameImg: show, num: "17,805", miniNum: "+1,500 (4,17%)", img: networkGreen },
-      { name: "Online users", nameImg: chart, num: "1,846", miniNum: "+530 (8,38%)", img: networkRed },
+      { name: "New users", nameImg: addUser, num: "17,805", miniNum: "+1,500 (4,17%)" },
+      { name: "Online users", nameImg: activity, num: "1,846", miniNum: "+530 (8,38%)", img: networkGreen },
     ],
   };
   render() {
@@ -34,10 +36,11 @@ class Statistics extends Component {
           </div>
         </div>
         <div className="performance-cards">
+          <img src={card} alt="" />
           {cards.map(({ name, nameImg, num, miniNum, img }) => (
             <Card name={name} nameImg={nameImg} num={num} miniNum={miniNum} img={img} />
           ))}
-          <p>View all {">"}</p>
+          <div className="view-all">View all {">"}</div>
         </div>
       </div>
     );

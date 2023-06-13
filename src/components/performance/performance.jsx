@@ -37,7 +37,7 @@ class Performance extends Component {
           {cards.map(({ name, nameImg, num, miniNum, img }) => (
             <Card name={name} nameImg={nameImg} num={num} miniNum={miniNum} img={img} />
           ))}
-          <p>View all {">"}</p>
+          <div className="view-all">View all {">"}</div>
         </div>
       </div>
     );
