@@ -1,6 +1,6 @@
 .referring {
    width: 100%;
-   height: 400px;
+   height: fit-content;
 
    &-title {
       font-weight: 600;
@@ -17,25 +17,51 @@
    }
 
    .table {
+      width: 100%;
       margin-top: 30px;
+      border-collapse: collapse;
+
+
 
       thead {
          td {
-            padding: 5px 10px;
+            padding: 5px 20px;
             font-size: 16px;
             letter-spacing: -0.02em;
             color: #55597D;
          }
       }
 
-      tbody {
-         td {
-            padding: 5px 10px;
-            font-size: 16px;
-            letter-spacing: -0.02em;
-            color: #ADB3CC;
 
+      .tbody {
+
+         tr {
+            border-bottom: 1px solid #55597D;
+            transition: all 0.2s;
+
+            td {
+               padding: 7px 20px;
+               font-size: 16px;
+               letter-spacing: -0.02em;
+               color: #ADB3CC;
+
+               &:nth-child(3) {
+                  color: #0931F5;
+               }
+            }
+
+            &:hover {
+               background: #0329E8;
+
+               td {
+                  &:nth-child(3) {
+                     color: #ADB3CC;
+                  }
+               }
+            }
          }
+
+
       }
 
    }

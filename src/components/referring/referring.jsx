@@ -1,9 +1,71 @@
 import React, { Component } from "react";
 
 import "./referring.scss";
+import List from "./list";
 
 class Referring extends Component {
+  state = {
+    list: [
+      {
+        num: "1.",
+        title: "Stack Overflow",
+        link: "https://stackoverflow.com/question/..",
+        clicks: "120",
+        type: "nofollow, noopener",
+      },
+      {
+        num: "2.",
+        title: "Youtube",
+        link: "https://www.youtube.com/?v=7wB1j..",
+        clicks: "14,522",
+        type: "nofollow",
+      },
+      {
+        num: "3.",
+        title: "Github",
+        link: "https://github.com/andrew/tabler-x..",
+        clicks: "36",
+        type: "nofollow",
+      },
+      {
+        num: "4.",
+        title: "Gosh William",
+        link: "https://gwilliam.co/blog/capture-fro..",
+        clicks: "580",
+        type: "ugc",
+      },
+      {
+        num: "5.",
+        title: "Stack Overflow",
+        link: "https://stackoverflow.com/question/..",
+        clicks: "112",
+        type: "nofollow, noopener",
+      },
+      {
+        num: "6.",
+        title: "Stack Overflow",
+        link: "https://stackoverflow.com/question/..",
+        clicks: "4",
+        type: "nofollow, noopener",
+      },
+      {
+        num: "7.",
+        title: "Stack Overflow",
+        link: "https://stackoverflow.com/question/..",
+        clicks: "51",
+        type: "nofollow, noopener",
+      },
+      {
+        num: "8.",
+        title: "Stack Overflow",
+        link: "https://stackoverflow.com/question/..",
+        clicks: "68",
+        type: "nofollow, noopener",
+      },
+    ],
+  };
   render() {
+    const { list } = this.state;
     return (
       <div className="referring">
         <div>
@@ -21,14 +83,10 @@ class Referring extends Component {
                 <td>Referrer type</td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Stack Overflow</td>
-                <td>https://stackoverflow.com/question/..</td>
-                <td>120</td>
-                <td>nofollow, noopener</td>
-              </tr>
+            <tbody className="tbody">
+              {list.map(({ num, title, link, clicks, type }, idx) => (
+                <List num={num} title={title} link={link} clicks={clicks} type={type} key={idx} />
+              ))}
             </tbody>
           </table>
         </div>
